@@ -111,7 +111,7 @@ metadata:
   name: aws-cli
   namespace: default
 spec:
-  serviceAccountName: aws-cli-sa
+  serviceAccountName: aws-cli-sa # 01_k8s_service_account.yaml 파일의 metadata.name: aws-cli-sa 계정으로 실행한다는 의미
   containers:
   - name: aws-cli
     image: amazon/aws-cli
