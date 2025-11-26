@@ -5,7 +5,7 @@ metadata:
   labels: 
     app: usermgmt-restapp
 spec:
-  type: NodePort
+  type: NodePort  # LoadBalancer로 변경해야 한다. Cloud에서 제공하지 않는 키워드이다
   selector:
     app: usermgmt-restapp
   ports: 
