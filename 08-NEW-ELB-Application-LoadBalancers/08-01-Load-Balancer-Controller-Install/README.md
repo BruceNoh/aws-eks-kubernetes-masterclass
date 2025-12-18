@@ -127,6 +127,8 @@ curl -o iam_policy_v2.3.1.json https://raw.githubusercontent.com/kubernetes-sigs
 aws iam create-policy \
     --policy-name AWSLoadBalancerControllerIAMPolicy \
     --policy-document file://iam_policy_latest.json
+# AWSLoadBalancerControllerIAMPolicy 정책이 이미 실습할 때 생성되어 있었다.
+# 해당 정책은 IAM Policy의 JSON에 각 정책들 확인이 가능하다.
 
 ## Sample Output
 Kalyans-MacBook-Pro:08-01-Load-Balancer-Controller-Install kdaida$ aws iam create-policy \
