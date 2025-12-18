@@ -194,7 +194,7 @@ eksctl create iamserviceaccount \
 # K8S늬 SA는 AWS IAM 자격증명을 알지 못하므로, OIDC를 생성해서 EKS 클러스터가 AWS 서비스들과 안전하게 연결되도록 IAM ROLE 연결할 수 있게한다. (OIDC Provider통해 인증,서명 검증)
 eksctl utils associate-iam-oidc-provider \
    --region ap-northeast-2 \
-  --cluster eks-demo-mj \
+   --cluster eks-demo-mj \
 
 ```
 - **Sample Output**
