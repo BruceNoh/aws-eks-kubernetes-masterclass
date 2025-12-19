@@ -425,7 +425,7 @@ kubectl -n kube-system get secret aws-load-balancer-controller-token-5w8th -o ya
    -n kube-system \
    -p '{"secrets": [{"name": "aws-load-balancer-controller-token"}]}'
 ```
-
+```t
 ## Decoce ca.crt using below two websites
 https://www.base64decode.org/
 https://www.sslchecker.com/certdecoder
