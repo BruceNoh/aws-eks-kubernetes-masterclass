@@ -2,7 +2,7 @@
 title: AWS Load Balancer Controller Install on AWS EKS
 description: Learn to install AWS Load Balancer Controller for Ingress Implementation on AWS EKS
 ---
-
+t
 <img width="1153" height="645" alt="image" src="https://github.com/user-attachments/assets/31111cb0-c12b-4a5d-b2a4-306343f6926b" />
  
 ## Step-00: Introduction
@@ -403,6 +403,7 @@ kubectl -n kube-system logs -f aws-load-balancer-controller-86b598cbd6-vqqsk
 # List Service Account and its secret
 kubectl -n kube-system get sa aws-load-balancer-controller
 kubectl -n kube-system get sa aws-load-balancer-controller -o yaml
+
 # 위 "aws-load-balancer-controller -o yaml" 확인 시 "secrets.name"이 생성되지 않았을 경우, 아래 작업이 필요함
 # 1단계: 토큰 생성
 # kubectl create token aws-load-balancer-controller \
@@ -416,10 +417,12 @@ kubectl -n kube-system get sa aws-load-balancer-controller -o yaml
 # kubectl patch serviceaccount aws-load-balancer-controller \
 #  -n kube-system \
 #  -p '{"secrets": [{"name": "aws-load-balancer-controller-token"}]}'
-```
+
 kubectl -n kube-system get secret <GET_FROM_PREVIOUS_COMMAND - secrets.name> -o yaml
 kubectl -n kube-system get secret aws-load-balancer-controller-token-5w8th 
 kubectl -n kube-system get secret aws-load-balancer-controller-token-5w8th -o yaml
+```
+
 ## Decoce ca.crt using below two websites
 https://www.base64decode.org/
 https://www.sslchecker.com/certdecoder
