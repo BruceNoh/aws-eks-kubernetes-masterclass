@@ -317,6 +317,8 @@ helm install aws-load-balancer-controller eks/aws-load-balancer-controller \
   --set vpcId=<vpc-xxxxxxxx> \
   --set image.repository=public.ecr.aws/eks/aws-load-balancer-controller
 
+## Load Balancer 설치 및 "--set image.repository"는 위 URL에서 해당 리전의 애드온을 값을 선언한다
+## AWS Amazon EKS 애드온을 클러스터에 배포하면, 노드들은 설치 메커니즘에 명시된 레지스트리(예: 설치 매니페스트나 Helm 파일)에서 필요한 컨테이너 이미지를 가져옵니다. 이미지는 Amazon EKS의 Amazon ECR 개인 저장소에서 가져옵니다. Amazon EKS는 각 Amazon EKS 지원 AWS 지역 내 저장소에 이미지를 복제합니다. 노드들은 다음 레지스트리 중 어느 곳에서든 인터넷을 통해 컨테이너 이미지를 가져올 수 있습니다. 또는 VPC 내에서 Amazon ECR(AWS PrivateLink)용 인터페이스 VPC 엔드포인트를 만들면 노드들이 이미지를 Amazon 네트워크를 통해 가져올 수 있습니다. 레지스트리는 AWS IAM 계정으로 인증해야 합니다. 노드들은 Amazon EKS 노드 IAM 역할을 사용하여 인증하며, 이 역할은 AmazonEC2ContainerRegistryReadOnly 관리 IAM 정책에 연결된 권한을 가지고 있습니다.
 ## Replace Cluster Name, Region Code, VPC ID, Image Repo Account ID and Region Code  
 helm install aws-load-balancer-controller eks/aws-load-balancer-controller \
   -n kube-system \
