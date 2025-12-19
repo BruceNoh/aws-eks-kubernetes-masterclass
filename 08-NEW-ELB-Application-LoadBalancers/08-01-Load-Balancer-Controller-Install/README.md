@@ -3,7 +3,7 @@ title: AWS Load Balancer Controller Install on AWS EKS
 description: Learn to install AWS Load Balancer Controller for Ingress Implementation on AWS EKS
 ---
 
-```t
+## Architecture
 <img width="1153" height="645" alt="image" src="https://github.com/user-attachments/assets/31111cb0-c12b-4a5d-b2a4-306343f6926b" />
 ```
  
