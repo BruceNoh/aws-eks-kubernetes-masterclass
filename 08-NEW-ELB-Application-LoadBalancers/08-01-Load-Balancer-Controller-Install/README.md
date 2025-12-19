@@ -424,6 +424,17 @@ kubectl -n kube-system get secret aws-load-balancer-controller-token-5w8th -o ya
    kubectl patch serviceaccount aws-load-balancer-controller \
    -n kube-system \
    -p '{"secrets": [{"name": "aws-load-balancer-controller-token"}]}'
+# 4단계: YAML로 Secret 미리 생성 권장
+cat << EOF | kubectl apply -f -
+apiVersion: v1
+kind: Secret
+metadata:
+  name: aws-load-balancer-controller-token
+  namespace: kube-system
+  annotations:
+    kubernetes.io/service-account.name: aws-load-balancer-controller
+type: kubernetes.io/service-account-token
+EOF
 ```
 ```t
 ## Decoce ca.crt using below two websites
