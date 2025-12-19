@@ -404,24 +404,26 @@ kubectl -n kube-system logs -f aws-load-balancer-controller-86b598cbd6-vqqsk
 # List Service Account and its secret
 kubectl -n kube-system get sa aws-load-balancer-controller
 kubectl -n kube-system get sa aws-load-balancer-controller -o yaml
-
-# 위 "aws-load-balancer-controller -o yaml" 확인 시 "secrets.name"이 생성되지 않았을 경우, 아래 작업이 필요함
-# 1단계: 토큰 생성
-#   kubectl create token aws-load-balancer-controller \
-#    -n kube-system \
-#    --duration=8760h  # 1년 유효
-# 2단계: Secret 생성
-#   kubectl create secret generic aws-load-balancer-controller-token \
-#    --from-literal=token=$(kubectl create token aws-load-balancer-controller -n kube-system) \
-#    -n kube-system
-# 3단계: ServiceAccount와 연결
-#   kubectl patch serviceaccount aws-load-balancer-controller \
-#    -n kube-system \
-#    -p '{"secrets": [{"name": "aws-load-balancer-controller-token"}]}'
-
 kubectl -n kube-system get secret <GET_FROM_PREVIOUS_COMMAND - secrets.name> -o yaml
 kubectl -n kube-system get secret aws-load-balancer-controller-token-5w8th 
 kubectl -n kube-system get secret aws-load-balancer-controller-token-5w8th -o yaml
+```
+### Issue
+```t
+# kubectl -n kube-system get sa aws-load-balancer-controller -o yaml
+# 위 "aws-load-balancer-controller -o yaml" 확인 시 "secrets.name"이 생성되지 않았을 경우, 아래 작업이 필요함
+# 1단계: 토큰 생성
+   kubectl create token aws-load-balancer-controller \
+   -n kube-system \
+   --duration=8760h  # 1년 유효
+# 2단계: Secret 생성
+   kubectl create secret generic aws-load-balancer-controller-token \
+   --from-literal=token=$(kubectl create token aws-load-balancer-controller -n kube-system) \
+   -n kube-system
+# 3단계: ServiceAccount와 연결
+   kubectl patch serviceaccount aws-load-balancer-controller \
+   -n kube-system \
+   -p '{"secrets": [{"name": "aws-load-balancer-controller-token"}]}'
 ```
 
 ## Decoce ca.crt using below two websites
