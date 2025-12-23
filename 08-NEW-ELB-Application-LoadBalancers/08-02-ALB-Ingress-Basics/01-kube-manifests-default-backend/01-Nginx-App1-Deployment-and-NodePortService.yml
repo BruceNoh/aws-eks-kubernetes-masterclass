@@ -30,7 +30,7 @@ metadata:
 #Important Note:  Need to add health check path annotations in service level if we are planning to use multiple targets in a load balancer    
 #    alb.ingress.kubernetes.io/healthcheck-path: /app1/index.html
 spec:
-  type: NodePort
+  type: LoadBalancer
   selector:
     app: app1-nginx
   ports:
