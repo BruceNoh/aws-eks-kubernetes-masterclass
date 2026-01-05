@@ -3,6 +3,9 @@ title: AWS Load Balancer Ingress SSL
 description: Learn AWS Load Balancer Controller - Ingress SSL
 ---
 
+## Architecture
+<img width="1212" height="636" alt="image" src="https://github.com/user-attachments/assets/fc6e319c-4c72-495c-a738-ed1b71a202f1" />
+
 ## Step-01: Introduction
 - We are going to register a new DNS in AWS Route53
 - We are going to create a SSL certificate 
