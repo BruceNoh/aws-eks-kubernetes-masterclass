@@ -3,6 +3,9 @@ title: AWS Load Balancer Controller - External DNS & Ingress
 description: Learn AWS Load Balancer Controller - External DNS & Ingress
 ---
 
+## Architecture
+<img width="1156" height="613" alt="image" src="https://github.com/user-attachments/assets/86caf3d2-8f80-434d-b183-86460e49e0b9" />
+
 ## Step-01: Update Ingress manifest by adding External DNS Annotation
 - Added annotation with two DNS Names
   - dnstest901.kubeoncloud.com
