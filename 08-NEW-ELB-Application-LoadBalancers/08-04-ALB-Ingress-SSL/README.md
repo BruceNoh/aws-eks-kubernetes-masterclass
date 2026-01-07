@@ -40,7 +40,7 @@ description: Learn AWS Load Balancer Controller - Ingress SSL
 <img width="400" height="200" alt="image" src="https://github.com/user-attachments/assets/a3de2508-f50f-493d-9f62-9af8f5021317" />
 
 - **04-ALB-Ingress-SSL.yml**
-- certificate-arn : 위 이미지에서 자신의 "arn"으로 수정한다
+- certificate-arn : 위 이미지에서 자신의 **arn**으로 수정한다
 ```yaml
     ## SSL Settings
     alb.ingress.kubernetes.io/listen-ports: '[{"HTTPS":443}, {"HTTP":80}]'
