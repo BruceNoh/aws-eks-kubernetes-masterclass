@@ -3,6 +3,9 @@ title: AWS Load Balancer Controller - External DNS Install
 description: Learn AWS Load Balancer Controller - External DNS Install
 ---
 
+## Architecture
+<img width="1144" height="614" alt="image" src="https://github.com/user-attachments/assets/7edc5eb1-08fa-472b-acf2-7f00bcfbd8c8" />
+
 ## Step-01: Introduction
 - **External DNS:** Used for Updating Route53 RecordSets from Kubernetes 
 - We need to create IAM Policy, k8s Service Account & IAM Role and associate them together for external-dns pod to add or remove entries in AWS Route53 Hosted Zones. 
