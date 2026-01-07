@@ -3,6 +3,9 @@ title: AWS Load Balancer - Ingress SSL HTTP to HTTPS Redirect
 description: Learn AWS Load Balancer - Ingress SSL HTTP to HTTPS Redirect
 ---
 
+## Architecture
+<img width="1150" height="610" alt="image" src="https://github.com/user-attachments/assets/f724f42c-42d5-422e-a8aa-74e4ae252e2e" />
+
 ## Step-01: Add annotations related to SSL Redirect
 - **File Name:** 04-ALB-Ingress-SSL-Redirect.yml
 - Redirect from HTTP to HTTPS
