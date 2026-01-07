@@ -36,7 +36,9 @@ description: Learn AWS Load Balancer Controller - Ingress SSL
 - Wait for 5 to 10 minutes and check the **Validation Status**  
 
 ## Step-04: Add annotations related to SSL
+
 <img width="400" height="200" alt="image" src="https://github.com/user-attachments/assets/a3de2508-f50f-493d-9f62-9af8f5021317" />
+
 - **04-ALB-Ingress-SSL.yml**
 ```yaml
     ## SSL Settings
