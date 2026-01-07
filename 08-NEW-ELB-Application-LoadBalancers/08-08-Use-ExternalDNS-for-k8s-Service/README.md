@@ -3,6 +3,9 @@ title: AWS Load Balancer Controller - External DNS & Service
 description: Learn AWS Load Balancer Controller - External DNS & Kubernetes Service
 ---
 
+## Architecture
+<img width="1151" height="605" alt="image" src="https://github.com/user-attachments/assets/b11cfde6-7f7f-40a8-b0a5-84bed73dfbfd" />
+
 ## Step-01: Introduction
 - We will create a Kubernetes Service of `type: LoadBalancer`
 - We will annotate that Service with external DNS hostname `external-dns.alpha.kubernetes.io/hostname: externaldns-k8s-service-demo101.stacksimplify.com` which will register the DNS in Route53 for that respective load balancer
