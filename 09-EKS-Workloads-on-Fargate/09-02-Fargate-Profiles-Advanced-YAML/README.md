@@ -1,5 +1,10 @@
 # EKS Mixed Mode Deployment - 3 Apps 
 
+## Architecture
+<img width="1165" height="616" alt="image" src="https://github.com/user-attachments/assets/f407313f-3abe-44d6-9576-231360c4eaee" />
+<img width="1169" height="610" alt="image" src="https://github.com/user-attachments/assets/4bd1e3ed-af60-4223-a0b1-9aae87ac7173" />
+
+
 ## Step-01: What are we going to learn?
 - We are going to learn about writing Fargate Profiles using YAML wherein with YAML we can create multiple fargate profiles at a time. 
 - Understand about `namespaces and labels` in `fargate profiles`
