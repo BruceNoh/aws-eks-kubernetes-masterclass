@@ -101,3 +101,14 @@ kubectl delete -f kube-manifests-curl/
 spec.type: ClusterIP일 경우 아래 ☆☆☆설정☆☆☆ 반드시 필요
 alb.ingress.kubernetes.io/target-type: ip
 ```
+- target-type: ip 미설정 시 아래 Error 발생확인 가능
+```
+# Ingress 확인명령어
+kubectl describe ingress.networking.k8s.io/ingress-internals-lb-demo
+
+# ERROR MESSAGE
+Events:
+  Type     Reason            Age                   From     Message
+  ----     ------            ----                  ----     -------
+  Warning  FailedBuildModel  39s (x16 over 3m24s)  ingress  Failed build model due to TargetGroup port is empty. When using Instance targets, your service be must of type 'NodePort' or 'LoadBalancer'
+```
