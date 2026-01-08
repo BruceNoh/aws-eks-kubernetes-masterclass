@@ -90,7 +90,7 @@ kubectl delete -f kube-manifests-curl/
 ```
 
 ## Issue: NodePort or ClusterIP
-1 내부 ALB(Ingress)는 절대 LoadBalancer 서비스를 사용하지 않는다.
+- 내부 ALB(Ingress)는 절대 LoadBalancer 서비스를 사용하지 않는다.
 - 반드시 ClusterIP or NodePort 서비스만 사용한다
 - AWS Load Balancer Controller는 Ingress를 보고 ALB를 생성한다
 - Ingress -> ALB
