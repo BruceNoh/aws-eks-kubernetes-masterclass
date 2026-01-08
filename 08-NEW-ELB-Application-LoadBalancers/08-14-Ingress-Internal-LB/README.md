@@ -98,14 +98,12 @@ kubectl delete -f kube-manifests-curl/
 - ALB Target Type이 Instance일 경우: spec.type이 NodePort
 - ALB Target Type이 IP일 경우: spec.type이 ClusterIP  
 ```
-spec.type: ClusterIP일 경우 아래 ☆☆☆설정☆☆☆ 반드시 필요
+spec.type: ClusterIP일 경우 아래 ☆☆☆설정☆☆☆ 추가 반드시 필요
 alb.ingress.kubernetes.io/target-type: ip
 ```
 - target-type: ip 미설정 시 아래 Error 발생확인 가능
+- Ingress Error 확인: kubectl describe ingress.networking.k8s.io/ingress-internals-lb-demo
 ```
-# Ingress 확인명령어
-kubectl describe ingress.networking.k8s.io/ingress-internals-lb-demo
-
 # ERROR MESSAGE
 Events:
   Type     Reason            Age                   From     Message
