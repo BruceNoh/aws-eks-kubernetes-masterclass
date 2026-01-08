@@ -3,6 +3,9 @@ title: AWS Load Balancer Controller - Ingress Host Header Routing
 description: Learn AWS Load Balancer Controller - Ingress Host Header Routing
 ---
 
+## Architecture
+<img width="1155" height="610" alt="image" src="https://github.com/user-attachments/assets/85c7002d-d96b-4330-8c10-183c317844ef" />
+
 ## Step-01: Introduction
 - Implement Host Header routing using Ingress
 - We can also call it has name based virtual host routing
