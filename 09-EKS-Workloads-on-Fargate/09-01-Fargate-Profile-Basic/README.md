@@ -1,5 +1,10 @@
 # EKS Fargate Profiles - Basics
 
+## Architecture
+<img width="1161" height="613" alt="image" src="https://github.com/user-attachments/assets/64bbdc0c-2d8e-4f3c-9615-5f74216e8795" />
+<img width="1157" height="612" alt="image" src="https://github.com/user-attachments/assets/718631c3-fa86-4388-92eb-5b8640ba6950" />
+
+
 ## Step-01: What are we going to learn?
 - **Assumptions:**
   - We already havea EKS Cluster whose name is **eksdemo1** created using eksctl
