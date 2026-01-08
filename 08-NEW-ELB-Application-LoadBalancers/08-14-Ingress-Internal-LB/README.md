@@ -90,17 +90,15 @@ kubectl delete -f kube-manifests-curl/
 ```
 
 ## Issue: NodePort or ClusterIP
-- 내부 ALB(Ingress)는 절대 LoadBalancer 서비스를 사용하지 않는다.
+1 내부 ALB(Ingress)는 절대 LoadBalancer 서비스를 사용하지 않는다.
 - 반드시 ClusterIP or NodePort 서비스만 사용한다
 - AWS Load Balancer Controller는 Ingress를 보고 ALB를 생성한다
 - Ingress -> ALB
 - Ingress -> Service를 target group으로 연결
 - ALB Target Type이 Instance일 경우: spec.type이 NodePort
 - ALB Target Type이 IP일 경우: spec.type이 ClusterIP  
-```
-spec.type: ClusterIP일 경우 아래 ☆☆☆설정☆☆☆ 추가 반드시 필요
-alb.ingress.kubernetes.io/target-type: ip
-```
+- spec.type: ClusterIP일 경우 Ingress yaml에 아래 ☆☆☆설정☆☆☆ 추가 반드시 필요
+- alb.ingress.kubernetes.io/target-type: ip
 - target-type: ip 미설정 시 아래 Error 발생확인 가능
 - Ingress Error 확인: kubectl describe ingress.networking.k8s.io/ingress-internals-lb-demo
 ```
