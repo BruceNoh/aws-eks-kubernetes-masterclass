@@ -3,6 +3,10 @@ title: AWS Load Balancer Controller - NLB TLS
 description: Learn to use AWS Network Load Balancer TLS with AWS Load Balancer Controller
 ---
 
+## Architecture
+<img width="1154" height="609" alt="image" src="https://github.com/user-attachments/assets/31e72692-5bfb-458d-ade2-e84b6ccdd7d4" />
+<img width="1139" height="611" alt="image" src="https://github.com/user-attachments/assets/c2409f14-911a-4211-a7e9-dceeb45dcd50" />
+
 ## Step-01: Introduction
 - Understand about the 4 TLS Annotations for Network Load Balancers
 - aws-load-balancer-ssl-cert
