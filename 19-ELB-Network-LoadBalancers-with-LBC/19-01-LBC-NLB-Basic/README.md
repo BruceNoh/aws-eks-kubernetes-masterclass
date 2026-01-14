@@ -3,6 +3,10 @@ title: AWS Load Balancer Controller - NLB Basics
 description: Learn to use AWS Network Load Balancer with AWS Load Balancer Controller
 ---
 
+## Architecture
+<img width="1157" height="609" alt="image" src="https://github.com/user-attachments/assets/cb1b8d87-0214-4e37-a8ea-dce3f346d945" />
+<img width="1136" height="604" alt="image" src="https://github.com/user-attachments/assets/b08a2c12-e91c-420f-a67e-73b9641c758b" />
+
 ## Step-01: Introduction
 - Understand more about 
   - **AWS Cloud Provider Load Balancer Controller (Legacy):** Creates AWS CLB and NLB
