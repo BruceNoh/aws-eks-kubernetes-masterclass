@@ -3,6 +3,9 @@ title: AWS Load Balancer Controller - NLB External DNS
 description: Learn to use AWS Network Load Balancer & External DNS with AWS Load Balancer Controller
 ---
 
+## Architecture
+<img width="1155" height="609" alt="image" src="https://github.com/user-attachments/assets/a2ae1f09-796a-4d4e-b5e8-5a09b61ce3dd" />
+
 ## Step-01: Introduction
 - Implement External DNS Annotation in NLB Kubernetes Service Manifest
 
