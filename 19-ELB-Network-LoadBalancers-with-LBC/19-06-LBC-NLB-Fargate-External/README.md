@@ -147,6 +147,7 @@ Go to Services -> EC2 -> Load Balancing -> Load Balancers
 
 
 ## Step-09: Delete Fargate Profile
+- 파게이트 삭제 시 파게이트에 배포된 서비스들은 EKS에 마이그레이션된다
 ```t
 # List Fargate Profiles
 eksctl get fargateprofile --cluster eksdemo1 
