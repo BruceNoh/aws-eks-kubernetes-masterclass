@@ -3,6 +3,10 @@ title: AWS Load Balancer Controller - NLB & Fargate
 description: Learn to use AWS Network Load Balancer with Fargate Pods
 ---
 
+## Archictecture
+<img width="1150" height="606" alt="image" src="https://github.com/user-attachments/assets/2eb3b6dc-6d58-43cc-b2ec-9f85721861c6" />
+<img width="1148" height="607" alt="image" src="https://github.com/user-attachments/assets/8dfa7315-4daa-487a-8b71-682a952fd525" />
+
 ## Step-01: Introduction
 - Create advanced AWS Fargate Profile
 - Schedule App3 on Fargate Pod
