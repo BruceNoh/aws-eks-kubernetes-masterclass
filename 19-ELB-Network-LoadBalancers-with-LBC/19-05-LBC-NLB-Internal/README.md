@@ -3,6 +3,10 @@ title: AWS Load Balancer Controller - Internal NLB
 description: Learn to create Internal AWS Network Load Balancer with Kubernetes
 ---
 
+## Architecture
+<img width="1150" height="608" alt="image" src="https://github.com/user-attachments/assets/165d06b9-a5ac-4ad0-81db-1de52fd9f852" />
+<img width="1140" height="611" alt="image" src="https://github.com/user-attachments/assets/0a4ab2a5-4a39-4d51-b2e8-1cf08d225d8f" />
+
 ## Step-01: Introduction
 - Create Internal NLB
 - Update NLB Service k8s manifest with `aws-load-balancer-scheme` Annotation as `internal`
