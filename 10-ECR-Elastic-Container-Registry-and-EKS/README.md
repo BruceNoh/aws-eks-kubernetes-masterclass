@@ -78,6 +78,7 @@ docker ps -a -q
 - Firstly, login to ECR Repository
 - Push the docker image to ECR
 - **AWS CLI Version 2.x**
+- "username AWS"의 "AWS"는 정해진 키워드
 ```
 # Get Login Password
 aws ecr get-login-password --region <your-region> | docker login --username AWS --password-stdin <ECR-REPOSITORY-URI>
