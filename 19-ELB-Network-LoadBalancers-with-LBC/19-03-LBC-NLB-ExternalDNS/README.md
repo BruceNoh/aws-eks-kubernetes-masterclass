@@ -5,6 +5,7 @@ description: Learn to use AWS Network Load Balancer & External DNS with AWS Load
 
 ## Architecture
 <img width="1155" height="609" alt="image" src="https://github.com/user-attachments/assets/a2ae1f09-796a-4d4e-b5e8-5a09b61ce3dd" />
+<img width="1153" height="609" alt="image" src="https://github.com/user-attachments/assets/03fd3b23-63b7-4c67-b36a-e13a826988e9" />
 
 ## Step-01: Introduction
 - Implement External DNS Annotation in NLB Kubernetes Service Manifest
