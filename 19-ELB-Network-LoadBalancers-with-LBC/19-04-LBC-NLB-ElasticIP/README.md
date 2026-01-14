@@ -3,6 +3,10 @@ title: AWS Load Balancer Controller - NLB Elastic IP
 description: Learn to use AWS Network Load Balancer & Elastic IP with AWS Load Balancer Controller
 ---
 
+## Architecture
+<img width="1149" height="609" alt="image" src="https://github.com/user-attachments/assets/e497f4bf-79bf-41ca-9022-d03ec2afcb32" />
+<img width="1149" height="607" alt="image" src="https://github.com/user-attachments/assets/28afa3af-faaf-4fe9-894c-bbf144051d4f" />
+
 ## Step-01: Introduction
 - Create Elastic IPs
 - Update NLB Service k8s manifest with Elastic IP Annotation with EIP Allocation IDs
