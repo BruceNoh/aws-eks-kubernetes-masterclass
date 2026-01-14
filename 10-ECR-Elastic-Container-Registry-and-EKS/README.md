@@ -1,5 +1,8 @@
 # AWS ECR - Elastic Container Registry Integration & EKS
 
+## Architecture
+<img width="1147" height="606" alt="image" src="https://github.com/user-attachments/assets/5d5d9ded-9e20-487d-80e6-43d997a36598" />
+
 ## Step-01: What are we going to learn?
 - We are going build a Docker image 
 - Push to ECR Repository
