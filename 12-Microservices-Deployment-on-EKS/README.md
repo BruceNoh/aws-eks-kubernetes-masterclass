@@ -1,5 +1,8 @@
 # Microservices Deployment on EKS
 
+## Architecture
+<img width="1148" height="606" alt="image" src="https://github.com/user-attachments/assets/86acd01f-6075-48a0-8fde-807d9aca06ee" />
+
 ## Step-00: What are Microservices?
 - Understand what are microservices on  a very high level
 
