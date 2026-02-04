@@ -1,5 +1,9 @@
 # DevOps with AWS Developer Tools on AWS EKS
 
+## Architecture
+<img width="1104" height="616" alt="image" src="https://github.com/user-attachments/assets/e0885c7d-c121-4ea0-966e-4124b3de92c8" />
+
+
 ## Step-01: Introduction to DevOps
 - Understand DevOps concepts
   - CI - Continuous Integration
